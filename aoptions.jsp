@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Options</title>
+
+<style>
+body{
+    background: linear-gradient(to bottom, #4B0082, #800080);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2{
+    color: gold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.btn{
+    display: block;
+    width: 180px;
+    margin: 15px auto;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 8px black;
+}
+
+.staff{
+    background-color: #007bff;
+}
+
+.student{
+    background-color: #28a745;
+}
+
+.fee{
+    background-color: #ff9800;
+}
+
+.logout{
+    background-color: #dc3545;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>ADMIN MENU</h2>
+
+<a href="staffinfo.jsp" target="f3" class="btn staff">
+    STAFF INFO
+</a>
+
+<a href="studentinfo.jsp" target="f3" class="btn student">
+    STUDENT INFO
+</a>
+
+<a href="feeinfo.jsp" target="f3" class="btn fee">
+    FEE INFO
+</a>
+
+<a href="index.jsp" target="_top" class="btn logout">
+    LOGOUT
+</a>
+
+</body>
+</html>

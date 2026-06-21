@@ -1,0 +1,31 @@
+<%@ page import="java.sql.*" %>
+            <%
+                int n = 0;
+                try{
+                    
+                    Class.forName("com.mysql.jdbc.Driver");
+
+                    Connection con = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/backend",
+                        "siddharth",
+                        "1234"
+                    );
+                    PreparedStatement pst = con.prepareStatement("select MAX(id) from staff");
+                    ResultSet rs = pst.executeQuery();
+                    if(rs.next()){
+                        n = Integer.parseInt(rs.getString(1)) + 1;
+                    }
+                    else{
+                        n = 101;
+                    }
+                    rs.close();
+                    pst.close();
+                    con.close();
+
+
+                }
+                catch(Exception e){
+                    out.println(e);
+                }
+                out.close();
+            %>
