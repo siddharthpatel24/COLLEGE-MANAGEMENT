@@ -47,14 +47,13 @@
 
                         }
                         else if(utype.equals("Staff")) {                                                       //staff area
-                            pst = con.prepareStatement("select * from staff where id= ? and  password = ?");
+                            pst = con.prepareStatement("select * from staff where name= ? and  password = ?");
                             pst.setString(1,uname);
                             pst.setString(2,upwsd);
                             ResultSet rs = pst.executeQuery();
                             if(rs.next()){
                                 
-                                session.setAttribute("id",rs.getString(1));
-                                session.setAttribute("staffname",rs.getString(2));
+                                session.setAttribute("staffname",rs.getString(1));
                                 response.sendRedirect("staffPage.jsp");
                             }
                             else{

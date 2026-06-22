@@ -42,7 +42,7 @@ catch(Exception e) {
 %>
 
 <a href="viewstaff.jsp" target="f3">
-    VIEW STAFF (<%= c %>)
+    VIEW STAFF (<%= c %>)m
 </a><br><br>
 
 <a href="modifystaffinfo.jsp" target="f3">MODIFY STAFF</a><br><br>
