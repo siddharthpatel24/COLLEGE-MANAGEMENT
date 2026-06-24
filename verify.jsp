@@ -60,8 +60,20 @@
                                 out.println("<h1>Invalid staff credentials</h1>");
                             }
                             rs.close();
-                        } else if (utype.equals("Student")) {
-                            out.println("<h1>student area to be implemented</h1>");
+                        } else if (utype.equals("Student")) {                               //student verification
+                            pst = con.prepareStatement("select * from prjstudent where name= ? and  password = ?");
+                            pst.setString(1,uname);
+                            pst.setString(2,upwsd);
+                            ResultSet rs = pst.executeQuery();
+                            if(rs.next()){
+                                
+                                session.setAttribute("stdname",rs.getString(2));
+                                response.sendRedirect("student_Page.jsp");
+                            }
+                            else{
+                                out.println("<h1>Invalid staff credentials</h1>");
+                            }
+                            rs.close();
                         }
 
                     } else {

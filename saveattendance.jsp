@@ -62,12 +62,6 @@ catch(Exception e)
 }
 %>
 
-<br><br>
-
-<a href="addattendance.jsp"
-   style="color:white;font-size:18px;">
-   CLICK HERE TO MARK ATTENDANCE AGAIN
-</a>
 
 </center>
 
