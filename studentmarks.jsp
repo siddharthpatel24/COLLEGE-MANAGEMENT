@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<body bgcolor="purple" style="color:khaki;">
-
+<body >
+<link rel="stylesheet" href="styles.css">
 <center>
 
 <h1>ENTER MARKS</h1>

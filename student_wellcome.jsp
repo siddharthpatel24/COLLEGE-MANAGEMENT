@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body bgcolor="red" tect="blue">
+<body >
+    <link rel="stylesheet" href="styles.css">
     <center>
         <h1><i><b>STUDENT DAHSBOARD</b></i></h1>
     </center>

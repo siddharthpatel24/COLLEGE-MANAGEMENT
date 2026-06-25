@@ -21,9 +21,8 @@
 <a href="feeinfo.jsp" target="f3" class="btn fee">
     FEE INFO
 </a>
-
 <a href="viewattendance.jsp" target="f3" class="btn fee">View Attendance</a>
-   
+
     <a href="viewmarks.jsp" target="f3" class="btn staff">View Marks</a>
 
 <a href="index.jsp" target="_top" class="btn logout">

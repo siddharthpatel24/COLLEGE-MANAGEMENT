@@ -66,8 +66,8 @@
                             pst.setString(2,upwsd);
                             ResultSet rs = pst.executeQuery();
                             if(rs.next()){
-                                
-                                session.setAttribute("stdname",rs.getString(2));
+                                session.setAttribute("stdrollno",rs.getString("rollno"));
+                                session.setAttribute("stdname",rs.getString("name"));
                                 response.sendRedirect("student_Page.jsp");
                             }
                             else{
@@ -99,11 +99,8 @@
 catch(Exception e){
     out.println(e);
 }
-
 %>
-
 <a href="index.jsp">Click Here</a> to go back
-
 </center>
 </body>
 </html>
