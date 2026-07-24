@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body >
-    <link rel="stylesheet" href="../assets/css/styles.css">
+   
     <center>
         <h1><i><b>STUDENT DAHSBOARD</b></i></h1>
     </center>

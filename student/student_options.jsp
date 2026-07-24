@@ -19,14 +19,14 @@
       VIEW RESULTS
 </a>
 <a href="my_attendance.jsp" target="f3" class="btn fee">VIEW Attendance</a>
-<a href="my_fee.jsp" target="f3" class="btn staff">
+<!-- <a href="my_fee.jsp" target="f3" class="btn staff">
     VIEW FEE
 </a>
 
 
-<a href="subject_materials.jsp" target="f3" class="btn staff">STUDY MATERIALS</a>
+<a href="subject_materials.jsp" target="f3" class="btn staff">STUDY MATERIALS</a> -->
 
-<a href="buy_books.jsp" target="_top" class="btn fee">
+<a href="buy_books.jsp"  class="btn fee" target="f3">
       BUY BOOKS
 </a>
 <a href="../index.jsp" target="_top" class="btn logout">

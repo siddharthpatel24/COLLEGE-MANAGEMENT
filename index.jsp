@@ -1,92 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+<body>
+<script src="assets/javascript/login.js"></script>
+<link rel="stylesheet" href="assets/css/index.css">
+<form action="LoginServlet" method="post">
 
-.login{
-    position:absolute;
-    top:180px;
-    left:780px;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0px 0px 15px black;
-}
+<div class="overlay">
 
-.login table{
-    border-collapse:collapse;
-}
+    <div class="title">
 
-.login th{
-    color:purple;
-    text-align:left;
-    padding:10px;
-}
+        <h1>College Management System</h1>
 
-.login td{
-    padding:10px;
-}
+        <p>
+            Manage Students, Staff, Attendance, Marks,
+            Books and Payments in one integrated platform.
+        </p>
 
-.login input,
-.login select{
-    width:180px;
-    padding:6px;
-    border:1px solid gray;
-    border-radius:5px;
-}
+    </div>
 
-</style>
-<body bgcolor="wheat" text="blue">
-   <form action="LoginServlet" method="post">
-    <center>
-        <h1>COLLEGE MANAGEMENT SYSTEM</h1>
-        <img src="assets/images/download.jpg"  width="500" height="500"  style='position: absolute; top:100pt;left:100pt'>
-       <div class="login">
+    <div class="login">
 
-<table cellpadding="8">
+        <h2>Login</h2>
 
-<tr>
-    <th>User Type</th>
-    <td>
-        <select name="t1">
-            <option>---Select---</option>
-            <option>Admin</option>
-            <option>Staff</option>
-            <option>Student</option>
-        </select>
-    </td>
-</tr>
+        <table>
 
-<tr>
-    <th>User Name</th>
-    <td>
-        <input type="text" name="t2">
-    </td>
-</tr>
+            <tr>
+                <th>User Type</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="t1">
+                        <option>---Select---</option>
+                        <option>Admin</option>
+                        <option>Staff</option>
+                        <option>Student</option>
+                    </select>
+                </td>
+            </tr>
 
-<tr>
-    <th>Password</th>
-    <td>
-        <input type="password" name="t3">
-    </td>
-</tr>
-<tr>
-    <th></th>
-    <td>
-        <input type="submit" value="submit" name="t4">
-    </td>
-</tr>
+            <tr>
+                <th>User Name</th>
+            </tr>
 
-</table>
+            <tr>
+                <td>
+                    <input type="text" id="t2" name="t2" onblur="valid()">
+                    <span id="nameError" style="color:#ff8080;"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Password</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="password" id="t3" name="t3" onblur="valid()">
+                    <span id="passError" style="color:#ff8080;"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="LOGIN">
+                </td>
+            </tr>
+
+        </table>
+
+        <a href="register.jsp" class="register">
+            New User? Register Here
+        </a>
+
+    </div>
 
 </div>
-        
-        <a href="register.jsp" style="position: absolute;top:300pt;left:700pt">Register</a>
-    </center>
-    </form>
+
+</form>
+
 </body>
-</html>   

@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src=""></script>
 </head>
 <body  bgcolor="purple" style="color: khaki;">
+    <!-- <link rel="stylesheet" href="../assets/css/tables.css"> -->
+
     <center>
         <form action="staffdatabase.jsp">
         <h1><i><b>STAFF REGISTRATION</h1>

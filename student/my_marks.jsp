@@ -7,8 +7,10 @@
     <title>Document</title>
 </head>
 <body bgcolor="wheat" text="purple"> 
+    <link rel="stylesheet" href="../assets/css/tables.css">
+
     <center>
-        <table border="1" bgcolor="gold" cellpadding="4" cellspacing="4">
+        <table class="table-container">
             <tr>
                 <th>SUBJECT</th>
                 <th>MARKS</th>

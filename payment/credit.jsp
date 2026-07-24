@@ -8,6 +8,8 @@
 </head>
 
 <body bgcolor="wheat" text="blue">
+    <link rel="stylesheet" href="../assets/css/tables.css">
+
 <%
 
     try{
@@ -43,9 +45,6 @@
             out.println("<center>PAYMENT SUCCESSFULL</center>");
             out.println("<center><a href='../student/buy_books.jsp'>BUY MORE</a>.....</center>");
         }
-        else{
-            out.println("<center><h2>Invalid Card Details</h2></center>");
-        }
 
         pst.close();
         con.close();
@@ -61,7 +60,7 @@
 
 <form action="../PaymentServlet" method="post">
 
-<table border="1" cellpadding="4" cellspacing="4">
+<table class="table-container">
 
 <tr>
     <th>ENTER CARD NO</th>

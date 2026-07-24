@@ -18,9 +18,7 @@
     STUDENT INFO
 </a>
 
-<a href="feeinfo.jsp" target="f3" class="btn fee">
-    FEE INFO
-</a>
+
 <a href="../staff/viewattendance.jsp" target="f3" class="btn fee">View Attendance</a>
 
     <a href="../staff/viewmarks.jsp" target="f3" class="btn staff">View Marks</a>

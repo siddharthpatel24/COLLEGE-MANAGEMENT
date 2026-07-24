@@ -8,6 +8,7 @@
 </head>
 
 <body bgcolor="wheat" text="purple">
+<link rel="stylesheet" href="../assets/css/tables.css">
 
 <center>
 
@@ -37,7 +38,9 @@ try
     {
 %>
 
-<table border="1" cellpadding="6" cellspacing="4">
+
+
+<table class="table-container" >
 
 <tr>
 <th>Roll Number</th>
